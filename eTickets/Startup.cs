@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 using eTickets.Data;
 using eTickets.Data.Cart;
 using eTickets.Data.Services;
@@ -6,6 +7,11 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.EntityFrameworkCore;
+=======
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.HttpsPolicy;
+>>>>>>> 94c65e8d6e93ce1ab43e939859a27d931b99ea84
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -28,6 +34,7 @@ namespace eTickets
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+<<<<<<< HEAD
             //DbContext configuration
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString
                 ("DefaultConnectionString")));
@@ -43,6 +50,8 @@ namespace eTickets
 
             services.AddSession();
 
+=======
+>>>>>>> 94c65e8d6e93ce1ab43e939859a27d931b99ea84
             services.AddControllersWithViews();
         }
 
@@ -63,7 +72,10 @@ namespace eTickets
             app.UseStaticFiles();
 
             app.UseRouting();
+<<<<<<< HEAD
             app.UseSession();
+=======
+>>>>>>> 94c65e8d6e93ce1ab43e939859a27d931b99ea84
 
             app.UseAuthorization();
 
@@ -73,8 +85,11 @@ namespace eTickets
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+<<<<<<< HEAD
             //Seed database
             AppDbInitializer.Seed(app);
+=======
+>>>>>>> 94c65e8d6e93ce1ab43e939859a27d931b99ea84
         }
     }
 }

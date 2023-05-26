@@ -4,6 +4,7 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+<<<<<<< HEAD
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.0" />
@@ -13,4 +14,6 @@
     </PackageReference>
   </ItemGroup>
 
+=======
+>>>>>>> 94c65e8d6e93ce1ab43e939859a27d931b99ea84
 </Project>
